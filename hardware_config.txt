@@ -1,0 +1,13 @@
+--[[ Аппаратная конфигурация устройства ]]
+
+cpucores : 0b100;
+ramgb : 0b10000;
+
+hardware = table([
+  cores = .(cpucores).,
+  memory = .(ramgb).,
+  cache = table([
+    a = 0b1000,
+    b = 0b100000
+  ])
+])
