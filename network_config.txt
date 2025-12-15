@@ -1,0 +1,9 @@
+--[[ Конфигурация сетевого сервера ]]
+
+port : 0b101000;
+secureport : 0b110111;
+
+server = table([
+  http = .(port).,
+  https = .(secureport).
+])
